@@ -1,0 +1,18 @@
+os: linux
+sudo: required
+language: "minimal"
+services:
+  - docker
+
+before_script:
+  - docker pull toliak/bootstrap-cpp
+
+jobs:
+  include:
+    - name: "checks"
+      script:
+        - chmod 755 scripts/*.sh
+        - docker run -v `pwd`:`pwd` -w `pwd` rusdevops/bootstrap-cpp ./scripts/checks.sh
+ 
+notifications:
+  email: false

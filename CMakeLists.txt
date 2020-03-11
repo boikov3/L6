@@ -34,7 +34,7 @@ find_package(Threads)
 
 add_executable(main
   ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp
-)
+        include/llogs.h)
 
 
 

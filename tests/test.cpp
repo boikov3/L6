@@ -1,4 +1,4 @@
-// Copyright 2020 <telsamar>
+// Copyright 2020 <boikov3>
 
 #include <gtest/gtest.h>
 

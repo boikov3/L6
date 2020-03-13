@@ -1,7 +1,9 @@
-// Copyright 2020 <telsamar>
+// Copyright 2020 <boikov3>
 #include <header.hpp>
 
 int main(int argc, char* argv[]) {
+	size_t M =0;
+
 	size_t M = thread::hardware_concurrency();
 	if (argc > 1)
 		M = atoi(argv[1]);
